@@ -9,7 +9,7 @@ export function Background() {
           style={{ backgroundImage: `url(${BackgroundPicture})` }}
         ></div>
         <div
-          className="block md:hidden w-full h-[34%] bg-cover bg-center"
+          className="block md:hidden w-full h-[44%] bg-cover bg-center"
           style={{ backgroundImage: `url(${BackgroundPictureMobile})` }}
         ></div>
         <div className="w-full md:w-2/3 h-full"></div>

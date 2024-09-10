@@ -4,7 +4,7 @@ import CardFrontImage from '../images/bg-card-front.png';
 export function CardFront(){
     return (
         <div className="absolute z-10 w-[76%] h-[22%] lg:w-[27%] lg:h-[27%] rounded-lg overflow-hidden shadow-lg
-                left-[4%] top-[18%] lg:left-[14%] lg:top-[21%]">
+                left-[4%] top-[16.5%] lg:left-[14%] lg:top-[21%]">
                     <div className="w-full h-full relative">
                         <img src={CardFrontImage} alt="Card Front" className="w-full h-full object-cover"/>
                         <div className="absolute inset-0 p-7 flex flex-col justify-between">
