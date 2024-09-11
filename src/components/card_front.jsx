@@ -1,7 +1,7 @@
 import React from "react";
 import CardFrontImage from '../images/bg-card-front.png';
 
-export function CardFront(){
+export function CardFront({ name, number, expMonth, expYear }){
     return (
         <div className="absolute z-10 w-[76%] h-[22%] lg:w-[27%] lg:h-[27%] rounded-lg overflow-hidden shadow-lg
                 left-[4%] top-[16.5%] lg:left-[14%] lg:top-[21%]">
@@ -13,10 +13,16 @@ export function CardFront(){
                                 <div className="lg:w-4 lg:h-4 w-3 h-3 rounded-full border-2 border-white"></div>
                             </div>
                             <div>
-                                <p className="text-white lg:text-[23px] text-[16px] tracking-[0.2em] mb-6">0000 0000 0000 0000</p>
+                                <p className="text-white lg:text-[23px] text-[16px] tracking-[0.2em] mb-6">
+                                   {number || "0000 0000 0000 0000"}
+                                </p>
                                 <div className="flex justify-between items-center">
-                                    <p className="text-white lg:text-[12px] text-[9px] uppercase tracking-widest">Jane Appleseed</p>
-                                    <p className="text-white lg:text-[12px] text-[9px] tracking-widest">00/00</p>
+                                    <p className="text-white lg:text-[12px] text-[9px] uppercase tracking-widest">
+                                        {name || "Jane Appleseed"}
+                                    </p>
+                                    <p className="text-white lg:text-[12px] text-[9px] tracking-widest">
+                                        {expMonth || "00"}/{expYear || "00"}
+                                    </p>
                                 </div>
                             </div>
                         </div>
